@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>FOOTEER</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Barlow', sans-serif;
+        }
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap:wrap ;
+}
+ul{
+    list-style: none;
+   
+}
+.footer{
+    background-color: #659aa167 ;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding:  0  15px  ;
+}
+.footer-col h4{
+      font-size:18px ;
+      color: #ffffff;
+      text-transform:capitalize;
+      margin-bottom: 35px;
+      position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+    position: absolute;
+    left: 0;
+    background-color: #e73414;
+    box-sizing: border-box;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+    text-transform:capitalize;
+    display: block;
+    transition: all 0.2 ease;
+}
+.footer-col ul li a:hover{
+    color: #000000;
+    padding-left:8px ;
+}
+.footer-col .socail-link a{
+  display: inline-block;
+   height: 40px;
+   width: 40px;
+  background-color: rgb(255, 255, 255,0.2);
+  margin-right:   10px ;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffff;
+  transition: all 0.3s ease;
+}
+.footer-col .socail-link a:hover{
+    color: #ffff;
+    background-color: #fff;
+}
+
+/* rensponsive */
+@media(max-width:767px){
+    .footer-col {
+    width: 62%;
+  padding: 15px;
+  text-align: center;
+}    
+}
+@media(max-width:567px) {
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col">
+               <h4>company</h4>
+               <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>   
+               </ul> 
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                 <li><a href="#">fAQ</a></li>
+                 <li><a href="#">shippping</a></li>
+                 <li><a href="#">Returnes</a></li>
+                </ul> 
+             </div>
+             <div class="footer-col">
+                <h4>onlineshope</h4>
+                <ul>
+                 <li><a href="#">watch</a></li>
+                 <li><a href="#">bag</a></li>
+                 <li><a href="#">shoes</a></li>
+                </ul> 
+             </div>
+            <div class="footer-col">
+                <h4>follow-us</h4>
+                <div class="socail-link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>  
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
